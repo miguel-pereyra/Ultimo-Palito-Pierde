@@ -1,4 +1,5 @@
 /*
+
  * Este software implementa una versión del juego clásico
  * “El Último Palito Pierde”. Permite configurar la cantidad
  * inicial de palitos, el máximo a retirar por turno y elegir
@@ -102,7 +103,8 @@ void jugar(int palitos_iniciales, int max_retiro, int *total_palitos, const char
     {
         mostrar_palitos(*total_palitos);
         separador();
-        printf("%s\nTurno de %s.\n" RESET, turno_jugador1 ? ROJO : AZUL, turno_jugador1 ? nombre_jugador1 : nombre_jugador2);        limite_sup = max_retiro;
+        printf("%s\nTurno de %s.\n" RESET, turno_jugador1 ? ROJO : AZUL, turno_jugador1 ? nombre_jugador1 : nombre_jugador2);
+        limite_sup = max_retiro;
         if (*total_palitos < max_retiro)
         {
             limite_sup = *total_palitos;
@@ -116,7 +118,7 @@ void jugar(int palitos_iniciales, int max_retiro, int *total_palitos, const char
             retiro = pedir_entero_entre("\nIngrese la cantidad de palitos a retirar: ", MIN_RETIRO, limite_sup);
         }
         *total_palitos -= retiro;
-        printf("%s\n%s ha retirado %d palitos.\n" RESET, turno_jugador1 ? ROJO : AZUL, turno_jugador1 ? nombre_jugador1 : nombre_jugador2, retiro);        
+        printf("%s\n%s ha retirado %d palitos.\n" RESET, turno_jugador1 ? ROJO : AZUL, turno_jugador1 ? nombre_jugador1 : nombre_jugador2, retiro);
         if (*total_palitos <= 0)
         {
             separador();

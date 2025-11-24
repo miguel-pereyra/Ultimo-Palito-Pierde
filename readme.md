@@ -125,7 +125,7 @@ Compatible con Windows 10+ (usa habilitarANSI())
 
 # Requisitos
 
-Compilador C compatible con C99:
+Compilador C:
 
 ```text
 gcc

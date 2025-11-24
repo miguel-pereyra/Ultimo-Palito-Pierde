@@ -6,6 +6,7 @@
 #include <limits.h>
 #include "funciones.h"
 
+
 #ifdef _WIN32
     #include <windows.h>
     #ifndef ENABLE_VIRTUAL_TERMINAL_PROCESSING
